@@ -1,0 +1,1 @@
+from nameh_khan.word_reader.model import WordReader
