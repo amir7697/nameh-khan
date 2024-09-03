@@ -1,3 +1,0 @@
-from nameh_khan.page_reader.utils.indexer import TopRightIndexer
-from nameh_khan.page_reader.utils.segmentation import SimpleSegmentation
-from nameh_khan.page_reader.utils.text_builder import LineBasedTextBuilder
