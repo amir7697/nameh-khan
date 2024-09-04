@@ -1,0 +1,1 @@
+from nameh_khan.page_reader.plain_text_page.page import PlainTextPageReader

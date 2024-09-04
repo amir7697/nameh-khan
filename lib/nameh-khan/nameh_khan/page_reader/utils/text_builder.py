@@ -10,7 +10,7 @@ class LineBasedTextBuilder(BaseEstimator, TransformerMixin):
         final_text = ''
         current_line = 0
         for i, word_image_item in enumerate(word_image_list):
-            word_text = self.word_reader_model(word_image_item['image'])
+            word_text = self.word_reader_model.transform(word_image_item['image'])
             if word_image_item['line'] > current_line:
                 current_line = word_image_item['line']
                 final_text += '\n'

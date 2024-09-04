@@ -22,10 +22,9 @@ class SimpleSegmentation(BaseEstimator, TransformerMixin):
         self.threshold_C = threshold_C
 
     def transform(self, image):
-        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        blured_gray_image = cv2.GaussianBlur(gray_image, self.blur_kernel_size, 0)
+        blured_image = cv2.GaussianBlur(image, self.blur_kernel_size, 0)
         threshold_image = cv2.adaptiveThreshold(
-            blured_gray_image,
+            blured_image,
             255,
             cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
             cv2.THRESH_BINARY_INV,
