@@ -1,5 +1,8 @@
+__pycache__/
 *.png
 *.txt
 *.xlsx
 *.tar.gz
+*.pth
+!best_model.pth
 .ipynb_checkpoints
