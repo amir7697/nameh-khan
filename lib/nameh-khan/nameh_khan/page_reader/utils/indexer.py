@@ -22,7 +22,7 @@ class TopRightIndexer(BaseEstimator, TransformerMixin):
             {
                 'idx': row.Index,
                 'line': row.lineNumber,
-                'image': (image[row.y1: row.y2, row.x1: row.x2]).astype('float32') / 255
+                'image': (image[row.y1: row.y2, row.x1: row.x2]).astype('float32') / 255 #todo: this is not good 
             }
             for row in box_locations_pdf.itertuples()
         ]
