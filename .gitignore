@@ -5,4 +5,5 @@ __pycache__/
 *.tar.gz
 *.pth
 !best_model.pth
+!best_model_nazanin.pth
 .ipynb_checkpoints
