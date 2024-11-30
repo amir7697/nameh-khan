@@ -57,13 +57,7 @@ def function(image):
     return text, output_path
 
 with gr.Blocks(theme=theme, css="footer { display: none !important; }") as demo:
-    gr.Markdown(f"""
-    <div style='text-align: center; font-size: 18px;'>
-    <div style='display: flex; align-items: center; gap: 10px; justify-content: center'>{logo}
-    <h1 style='font-size: 43px'>{title}</h1>
-    </div><p style='margin-bottom: 0'>{desc_1}</p>
-    <p style='margin-top: 0'>{desc_2}</p></div>"""
-    )
+    gr.Markdown(f"""<div style='text-align: center; font-size: 18px;'><div style='display: flex; align-items: center; gap: 10px; justify-content: center'>{logo}<h1 style='font-size: 43px'>{title}</h1></div><p style='margin-bottom: 0'>{desc_1}</p><p style='margin-top: 0'>{desc_2}</p></div>""")
 
     with gr.Row():
         with gr.Column():
