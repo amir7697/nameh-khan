@@ -2,7 +2,7 @@
 name = "nameh-khan"
 version = "0.1.0"
 description = "Packge for scanning official letters."
-authors = ["amirhosseini1997ah@gmail.com"]
+authors = ["Amir Hosseini <amirhosseini1997ah@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
