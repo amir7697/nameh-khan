@@ -1,3 +1,4 @@
+import cv2
 import gradio as gr
 
 from nameh_khan.page_reader.plain_text_page import PlainTextPageReader
@@ -49,9 +50,12 @@ logo = """<svg width="65" height="60" viewBox="0 0 65 60" fill="none" xmlns="htt
 
 def function(image):
     output_path = 'text.txt'
-    # page_reader = PlainTextPageReader()
-    # text = page_reader.transform(image)
-    text = 'hi'
+    try: 
+        image = cv2.imread(image)
+        page_reader = PlainTextPageReader()
+        text = page_reader.transform(image)
+    except:
+        text = 'متاسفانه متنی از این تصویر استخراج نشد!'
     with open(output_path, 'w') as f: 
         f.write(text)
     return text, output_path
