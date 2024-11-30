@@ -78,8 +78,8 @@ with gr.Blocks(theme=theme, css="footer { display: none !important; }") as demo:
         with gr.Column():
             output_text = gr.Textbox(label='Text', rtl=True, lines=27, max_lines=30)
             with gr.Row():
-                copy_button = gr.DownloadButton(label='Copy to Clipboard', size='lg', visible=False, icon='interface-essential.svg')
-                download_button = gr.DownloadButton(label='Download .txt', size='lg', visible=False, icon='files-17.svg')
+                copy_button = gr.DownloadButton(label='Copy to Clipboard', size='lg', visible=False, icon='demo/copy_icon.svg')
+                download_button = gr.DownloadButton(label='Download .txt', size='lg', visible=False, icon='demo/download_icon.svg')
     
     submit_button.click(fn=function, inputs=image_input, outputs=[output_text, download_button])
     submit_button.click(
