@@ -9,5 +9,5 @@ __pycache__/
 !best_model_zar.pth
 !best_model_nazanin.pth
 samples/
-!/samples/00001
+!/samples/00001/page_00001.png
 .ipynb_checkpoints
