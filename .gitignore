@@ -1,9 +1,12 @@
 __pycache__/
-*.png
-*.txt
-*.xlsx
+#*.png
+#*.txt
+#*.xlsx
 *.tar.gz
 *.pth
 !best_model.pth
+!model.pth
+!best_model_zar.pth
 !best_model_nazanin.pth
+#!/samples/00001/page_00001.png
 .ipynb_checkpoints
