@@ -1,6 +1,6 @@
 __pycache__/
 #*.png
-*.txt
+#*.txt
 #*.xlsx
 *.tar.gz
 *.pth
