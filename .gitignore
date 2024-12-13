@@ -1,4 +1,5 @@
 __pycache__/
+dist/
 *.png
 *.txt
 *.xlsx
@@ -8,4 +9,5 @@ __pycache__/
 !model.pth
 !best_model_zar.pth
 !best_model_nazanin.pth
+!samples/*.png
 .ipynb_checkpoints
