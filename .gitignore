@@ -10,4 +10,5 @@ dist/
 !best_model_zar.pth
 !best_model_nazanin.pth
 !samples/*.png
+!demo.png
 .ipynb_checkpoints
