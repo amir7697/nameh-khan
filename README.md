@@ -15,6 +15,12 @@ To manage this project's dependencies and packaging, we use [Poetry](https://pyt
 ```
 pip install poetry==1.8.4
 ```
+2) Export poetry path. 
+- Ubunto: Add this line to your ~/.bashrc or ~/.zshrc.
+```commandline
+export PATH="$HOME/.local/bin:$PATH"
+```
+- Windows: Add the path of poetry installation to Path environment variable. This [link](https://www.eukhost.com/kb/how-to-add-to-the-path-on-windows-10-and-windows-11/) may help you.
 2) Check the poetry version. 
 ```
 poetry --version
@@ -93,8 +99,13 @@ poetry install
 cd ../..
 ```
 5) Run the below command: 
+- Ubuntu: 
 ```commandline
 PYTHONPATH=lib/nameh-khan/ python demo/app.py
+```
+- Windows: 
+```commandline
+set PYTHONPATH=lib\nameh-khan; python .\demo\app.py
 ```
 
 Now you can see the app on port 7860 of your system. Open your browser and open this url: `http://127.0.0.1:7860/?__theme=dark`.
